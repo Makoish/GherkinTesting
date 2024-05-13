@@ -30,7 +30,7 @@ ________________________________________________________________________________
 Website2: https://thinking-tester-contact-list.herokuapp.com/
 
 
-Feature 1: Sign up
+Feature 1: SIGNUP feature 
 	scenario 1: adding only numbers in first name while last Name and email are correct (mafrood y2ool mynf3sh)
 	scenario 2: adding only numbers in last name while first Name and email are correct (zyo)
 	scenario 3: adding email address without domain name while other fields are correct
