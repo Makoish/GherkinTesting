@@ -1,0 +1,56 @@
+Feature 1: LOGIN feature
+	scenario 1: Login as standard user
+	scenario 2: Login as locked_out_user
+	scenario 3: Login as problem_user
+	scenario 4: Login as performance_glitch_user
+	scenario 5: Login as error_user
+	scenario 6: Login as visual_user
+
+
+
+Feature 2: Add to cart
+	scenario 1: add item while cart is empty
+	scenario 2: add item while cart is not empty
+
+
+Feature 3: remove from cart
+	scenario 1: remove item from a single item cart
+	scenario 2: remove item from more than one item cart
+
+
+
+
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+Website2: https://thinking-tester-contact-list.herokuapp.com/
+
+
+Feature 1: Sign up
+	scenario 1: adding only numbers in first name while last Name and email are correct (mafrood y2ool mynf3sh)
+	scenario 2: adding only numbers in last name while first Name and email are correct (zyo)
+	scenario 3: adding email address without domain name while other fields are correct
+	scenario 4: adding email without the "@"
+	scenario 5: adding email without the "\..{3}"
+	scenario 6: leaving the first name field empty
+	scenario 7: leaving the last name field empty
+	scenario 8: leaving the email field empty
+	scenario 9: leaving the password field empty
+	secnario 10: adding an already registered email address
+	scenario 11: adding correct email un-registered address
+
+Feature 2: Login
+	scenario 1: entering correct email but wrong password
+	scenario 2: entering correct email but in mix of capital and small characters
+	scenario 3: enetering password in mix of capital and small characters
+	scenario 4: entering correct email and password
+
+	
+
+
+
+
