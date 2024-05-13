@@ -3,7 +3,8 @@ from time import sleep
 from selenium.webdriver.common.by import By
 
 @given("I am on the signup page {website}")
-def step_impl(context):
+def step_impl(context, website):
+    context.website = website
     context.driver.get(context.website)    
 
 @when("I enter {firstname} in the first name field")
@@ -45,11 +46,21 @@ def step_impl(context):
 
 @then("the user will be signed up successfully but this is not a valid name")
 def step_impl(context):
-    # check if this "https://thinking-tester-contact-list.herokuapp.com/contactList" is the correct url
-    # if yes, print logged in successfully
-    # else print login failed
     if context.driver.current_url == "https://thinking-tester-contact-list.herokuapp.com/contactList":
         print("logged in successfully but this is not a valid name")
     else:
         print("login failed")
-    
+
+@then("the user will be signed up successfully")
+def step_impl(context):
+    if context.driver.current_url == "https://thinking-tester-contact-list.herokuapp.com/contactList":
+        print("logged in successfully")
+    else:
+        print("login failed")
+
+@then("the user will not be able to sign up successfully")
+def step_impl(context):
+    if context.driver.current_url == "https://thinking-tester-contact-list.herokuapp.com/signup":
+        print("logged in successfully")
+    else:
+        print("login failed")
