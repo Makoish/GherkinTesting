@@ -29,12 +29,17 @@ def step_impl(context):
 
 @then("the website should not open")
 def step_impl(context):
-    
-    
+
     text_box = context.driver.find_element(By.XPATH, "/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3")
-    text_content = text_box.get_attribute('value')
-    assert text_content == r"Epic sadface: Sorry, this user has\n been locked out."
+
+    assert text_box.text == "Epic sadface: Sorry, this user has been locked out."
     
 
 
+
+@Then("the website should print error")
+def step_impl(context):
+    text_box = context.driver.find_element(By.XPATH, "/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3")
+
+    assert text_box.text == "Epic sadface: Username and password do not match any user in this service"
 
