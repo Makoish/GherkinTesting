@@ -1,6 +1,6 @@
 Feature: LOGIN
 
-    The user should be able to open a website
+    The user should be login to the website
 
     Scenario: Login as standard user
     
@@ -65,6 +65,28 @@ Feature: LOGIN
         And I enter username and password visual_user secret_sauce
 
         Then the website should open
+
+    Scenario: Login with wrong user but correct password
+    
+        Given I have internet connection
+
+        When I open the website https://www.saucedemo.com/
+
+        And I enter username and password zh2t_awy secret_sauce
+
+        Then the website should print error
+
+    
+    Scenario: Login with correct user but wrong password
+    
+        Given I have internet connection
+
+        When I open the website https://www.saucedemo.com/
+
+        And I enter username and password visual_user zh2t_awy
+
+        Then the website should print error
+
 
     
 
