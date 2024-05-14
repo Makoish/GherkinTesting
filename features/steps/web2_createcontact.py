@@ -20,8 +20,14 @@ def step_impl(context, message):
     error = context.driver.find_element("xpath", "/html/body/div/span")
 
     # assert error.text == "Contact validation failed: firstName: Path `firstName` is required."
-    print(error.text)
-    print(message)
+    # write the error message to a text file called error.txt
+    with open("error.txt", "w") as f:
+        # write the current senario to the file
+        f.write(context.scenario.name)
+        f.write(error.text)
+        f.write("======================================")
+
+    
 
 @when("I fill in the first name with {firstname}")
 def step_impl(context, firstname):

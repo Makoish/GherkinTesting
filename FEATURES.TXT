@@ -8,15 +8,114 @@ Feature 1: LOGIN feature
 
 
 
-Feature 2: Add to cart
-	scenario 1: add item while cart is empty
-	scenario 2: add item while cart is not empty
+Feature 2: remove from cart
+	scenario 7: remove item 1 to cart as standard_user
+	scenario 8: remove item 2 to cart as standard_user
+	scenario 9: remove item 3 to cart as standard_user
+	scenario 10: remove item 4 to cart as standard_user
+	scenario 11: remove item 5 to cart as standard_user
+	scenario 12: remove item 6 to cart as standard_user
+
+	scenario 13: remove item 1 to cart as problem_user
+	scenario 14: remove item 2 to cart as problem_user
+	scenario 15: remove item 3 to cart as problem_user
+	scenario 16: remove item 4 to cart as problem_user
+	scenario 17: remove item 5 to cart as problem_user
+	scenario 18: remove item 6 to cart as problem_user
+
+
+	scenario 19: remove item 1 to cart as performance_glitch_user
+	scenario 20: remove item 2 to cart as performance_glitch_user
+	scenario 21: remove item 3 to cart as performance_glitch_user
+	scenario 22: remove item 4 to cart as performance_glitch_user
+	scenario 23: remove item 5 to cart as performance_glitch_user
+	scenario 24: remove item 6 to cart as performance_glitch_user
+
+
+	scenario 25: remove item 1 to cart as error_user
+	scenario 26: remove item 2 to cart as error_user
+	scenario 27: remove item 3 to cart as error_user
+	scenario 28: remove item 4 to cart as error_user
+	scenario 29: remove item 5 to cart as error_user
+	scenario 30: remove item 6 to cart as error_user
+
+
+	scenario 31: remove item 1 to cart as visual_user
+	scenario 32: remove item 2 to cart as visual_user
+	scenario 33: remove item 3 to cart as visual_user
+	scenario 34: remove item 4 to cart as visual_user
+	scenario 35: remove item 5 to cart as visual_user
+	scenario 36: remove item 6 to cart as visual_user
+	
 
 
 Feature 3: remove from cart
-	scenario 1: remove item from a single item cart
-	scenario 2: remove item from more than one item cart
+	scenario 37: add item 1 to cart as standard_user
+	scenario 38: add item 2 to cart as standard_user
+	scenario 39: add item 3 to cart as standard_user
+	scenario 40: add item 4 to cart as standard_user
+	scenario 41: add item 5 to cart as standard_user
+	scenario 42: add item 6 to cart as standard_user
 
+	scenario 43: add item 1 to cart as problem_user
+	scenario 44: add item 2 to cart as problem_user
+	scenario 45: add item 3 to cart as problem_user
+	scenario 46: add item 4 to cart as problem_user
+	scenario 47: add item 5 to cart as problem_user
+	scenario 48: add item 6 to cart as problem_user
+
+
+	scenario 49: add item 1 to cart as performance_glitch_user
+	scenario 50: add item 2 to cart as performance_glitch_user
+	scenario 51: add item 3 to cart as performance_glitch_user
+	scenario 52: add item 4 to cart as performance_glitch_user
+	scenario 53: add item 5 to cart as performance_glitch_user
+	scenario 54: add item 6 to cart as performance_glitch_user
+
+
+	scenario 55: add item 1 to cart as error_user
+	scenario 56: add item 2 to cart as error_user
+	scenario 57: add item 3 to cart as error_user
+	scenario 58: add item 4 to cart as error_user
+	scenario 59: add item 5 to cart as error_user
+	scenario 60: add item 6 to cart as error_user
+
+
+	scenario 61: add item 1 to cart as visual_user
+	scenario 62: add item 2 to cart as visual_user
+	scenario 63: add item 3 to cart as visual_user
+	scenario 64: add item 4 to cart as visual_user
+	scenario 65: add item 5 to cart as visual_user
+	scenario 66: add item 6 to cart as visual_user
+
+
+Feature 3: sort
+	scenario 67: sort Z-A standard_user
+	scenario 68: sort high to low standard_user
+	scenario 69: sort low to high standard_user
+	
+
+	scenario 70: sort Z-A problem_user
+	scenario 71: sort high to low problem_user
+	scenario 72: sort low to high problem_user
+
+
+	scenario 72: sort Z-A performance_glitch_user
+	scenario 73: sort high to low performance_glitch_user
+	scenario 74: sort low to high performance_glitch_user
+
+
+	scenario 75: sort Z-A standard_user
+	scenario 76: sort high to low standard_user
+	scenario 77: sort low to high standard_user
+	
+
+
+	scenario 78: sort Z-A error_user
+	scenario 79: sort high to low error_user
+	scenario 80: sort low to high error_user
+
+Feature 4:  
 
 
 
