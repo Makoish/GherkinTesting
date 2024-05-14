@@ -21,11 +21,13 @@ def step_impl(context, message):
 
     # assert error.text == "Contact validation failed: firstName: Path `firstName` is required."
     # write the error message to a text file called error.txt
-    with open("error.txt", "w") as f:
-        # write the current senario to the file
-        f.write(context.scenario.name)
-        f.write(error.text)
-        f.write("======================================")
+    # with open("error.txt", "w") as f:
+    #     # write the current senario to the file
+    #     f.write(context.scenario.name)
+    #     f.write(error.text)
+    #     f.write("======================================")
+    print(error.text)
+    print(message)
 
     
 

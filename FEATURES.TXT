@@ -1,3 +1,6 @@
+
+Website1: https://www.saucedemo.com/
+
 Feature 1: LOGIN feature
 	scenario 1: Login as standard user
 	scenario 2: Login as locked_out_user
@@ -5,8 +8,6 @@ Feature 1: LOGIN feature
 	scenario 4: Login as performance_glitch_user
 	scenario 5: Login as error_user
 	scenario 6: Login as visual_user
-
-
 
 Feature 2: remove from cart
 	scenario 7: remove item 1 to cart as standard_user
@@ -115,16 +116,10 @@ Feature 3: sort
 	scenario 79: sort high to low error_user
 	scenario 80: sort low to high error_user
 
-Feature 4:  
-
-
-
-
+Feature 4: Checkout cart
+	senario 81: Checkout as standard user
 
 _____________________________________________________________________________________________________________________________________________________________________________________________
-
-
-
 
 Website2: https://thinking-tester-contact-list.herokuapp.com/
 
