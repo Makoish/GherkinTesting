@@ -46,11 +46,16 @@ Feature 1: SIGNUP feature
 Feature 2: Login
 	scenario 1: entering correct email but wrong password
 	scenario 2: entering correct email but in mix of capital and small characters
-	scenario 3: enetering password in mix of capital and small characters
+	scenario 3: entering password in mix of capital and small characters
 	scenario 4: entering correct email and password
 
-	
-
+Feature 3: create_contact
+	senario 1: leave first name empty
+	senario 2: leave last name empty
+	senario 3: fill first and last names but write the mail wrong
+	senario 4: fill fields correctlly but fill birth date wrong
+	senario 5: fill fields correctlly but fill postal code wrong
+	senario 6: fill fields correctlly but fill phone number wrong
 
 
 

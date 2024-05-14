@@ -1,13 +1,14 @@
 Feature: SIGNUP
-    the user should be able to sign up successfully if he/she entered valid data in all fields
-    the user should not be able to sign up if he/she entered invalid data in any field
+              as the user enters the signup page,
+            he/she should be able to sign up successfully if he/she entered valid data in all fields,
+            he/she should not be able to sign up if he/she entered invalid data in any field.
     
         Scenario: adding only numbers in first name while last Name and email are correct
             Given I am on the signup page https://thinking-tester-contact-list.herokuapp.com/addUser
              When I enter 123 in the first name field
               And I enter Ashraf in the last name field
-              And I enter test@gmail.com in the email field
-              And I enter 123456 in the password field
+              And I enter test1@gmail.com in the email field
+              And I enter 1234567 in the password field
               And I click the submit button
              Then the user will be signed up successfully but this is not a valid name
 
@@ -15,8 +16,8 @@ Feature: SIGNUP
             Given I am on the signup page https://thinking-tester-contact-list.herokuapp.com/addUser
              When I enter Ashraf in the first name field
               And I enter 123 in the last name field
-              And I enter test@gmail.com in the email field
-              And I enter 123456 in the password field
+              And I enter test2@gmail.com in the email field
+              And I enter 1234567 in the password field
               And I click the submit button
              Then the user will be signed up successfully but this is not a valid name
 
@@ -25,7 +26,7 @@ Feature: SIGNUP
              When I enter Ashraf in the first name field
               And I enter Ashraf in the last name field
               And I enter test in the email field
-              And I enter 123456 in the password field
+              And I enter 1234567 in the password field
               And I click the submit button
              Then the user will not be able to sign up successfully
 
@@ -34,7 +35,7 @@ Feature: SIGNUP
              When I enter Ashraf in the first name field
               And I enter Ashraf in the last name field
               And I enter testgmail.com in the email field
-              And I enter 123456 in the password field
+              And I enter 1234567 in the password field
               And I click the submit button
              Then the user will not be able to sign up successfully
 
@@ -42,8 +43,8 @@ Feature: SIGNUP
             Given I am on the signup page https://thinking-tester-contact-list.herokuapp.com/addUser
              When I enter Ashraf in the first name field
               And I enter Ashraf in the last name field
-              And I enter test@gmail in the email field
-              And I enter 123456 in the password field
+              And I enter test3@gmail in the email field
+              And I enter 1234567 in the password field
               And I click the submit button
              Then the user will not be able to sign up successfully
 
@@ -51,8 +52,8 @@ Feature: SIGNUP
             Given I am on the signup page https://thinking-tester-contact-list.herokuapp.com/addUser
              When I enter '' in the first name field
               And I enter Ashraf in the last name field
-              And I enter test@gmail.com in the email field
-              And I enter 123456 in the password field
+              And I enter test4@gmail.com in the email field
+              And I enter 1234567 in the password field
               And I click the submit button
              Then the user will not be able to sign up successfully
 
@@ -60,8 +61,8 @@ Feature: SIGNUP
             Given I am on the signup page https://thinking-tester-contact-list.herokuapp.com/addUser
              When I enter Ashraf in the first name field
               And I enter '' in the last name field
-              And I enter test@gmail.com in the email field
-              And I enter 123456 in the password field
+              And I enter test5@gmail.com in the email field
+              And I enter 1234567 in the password field
               And I click the submit button
              Then the user will not be able to sign up successfully
 
@@ -70,7 +71,7 @@ Feature: SIGNUP
              When I enter Ramy in the first name field
               And I enter Ashraf in the last name field
               And I enter '' in the email field
-              And I enter 123456 in the password field
+              And I enter 1234567 in the password field
               And I click the submit button
              Then the user will not be able to sign up successfully
 
@@ -78,7 +79,7 @@ Feature: SIGNUP
             Given I am on the signup page https://thinking-tester-contact-list.herokuapp.com/addUser
              When I enter Ramy in the first name field
               And I enter Ashraf in the last name field
-              And I enter test@gmail.com in the email field
+              And I enter test6@gmail.com in the email field
               And I enter '' in the password field
               And I click the submit button
              Then the user will not be able to sign up successfully
@@ -87,8 +88,8 @@ Feature: SIGNUP
             Given I am on the signup page https://thinking-tester-contact-list.herokuapp.com/addUser
              When I enter Ramy in the first name field
               And I enter Ashraf in the last name field
-              And I enter test@gmail.com in the email field
-              And I enter 123456 in the password field
+              And I enter test1@gmail.com in the email field
+              And I enter 1234567 in the password field
               And I click the submit button
              Then the user will not be able to sign up successfully
 
@@ -96,7 +97,7 @@ Feature: SIGNUP
             Given I am on the signup page https://thinking-tester-contact-list.herokuapp.com/addUser
              When I enter Ramy in the first name field
               And I enter Ashraf in the last name field
-              And I enter test@gmail.com in the email field
-              And I enter 123456 in the password field
+              And I enter test8@gmail.com in the email field
+              And I enter 1234567 in the password field
               And I click the submit button
              Then the user will be signed up successfully

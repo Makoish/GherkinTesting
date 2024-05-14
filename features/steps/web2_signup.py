@@ -1,5 +1,6 @@
 from behave import *
 from time import sleep
+from polars import tail
 from selenium.webdriver.common.by import By
 
 @given("I am on the signup page {website}")
@@ -46,21 +47,30 @@ def step_impl(context):
 
 @then("the user will be signed up successfully but this is not a valid name")
 def step_impl(context):
+    # assert context.driver.current_url == "https://thinking-tester-contact-list.herokuapp.com/contactList"
     if context.driver.current_url == "https://thinking-tester-contact-list.herokuapp.com/contactList":
+        print("\n\n\n\n\n\n\n\n")
         print("logged in successfully but this is not a valid name")
     else:
+        print("\n\n\n\n\n\n\n\n")
         print("login failed")
 
 @then("the user will be signed up successfully")
 def step_impl(context):
+    # assert context.driver.current_url == "https://thinking-tester-contact-list.herokuapp.com/contactList"
     if context.driver.current_url == "https://thinking-tester-contact-list.herokuapp.com/contactList":
+        print("\n\n\n\n\n\n\n\n")
         print("logged in successfully")
     else:
+        print("\n\n\n\n\n\n\n\n")
         print("login failed")
 
 @then("the user will not be able to sign up successfully")
 def step_impl(context):
+    # assert context.driver.current_url == "https://thinking-tester-contact-list.herokuapp.com/signup"
     if context.driver.current_url == "https://thinking-tester-contact-list.herokuapp.com/signup":
+        print("\n\n\n\n\n\n\n\n")
         print("logged in successfully")
     else:
+        print("\n\n\n\n\n\n\n\n")
         print("login failed")
